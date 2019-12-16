@@ -1,0 +1,114 @@
+input[type='checkbox'] {
+    display: none;
+}
+
+.button{
+  
+  
+  
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 16px;
+}
+
+.button:hover{
+background-color: lightgray;
+}
+
+input{
+  padding: 10px;
+}
+
+.user_inputs{
+  padding: 5px;
+}
+
+.lbl-toggle {
+    display: block;
+    font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: gray;
+  background: lightgrey;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 1s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: darkgrey;
+}
+
+.lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+  
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition:ease-out;
+  }
+
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: ease-in-out;
+    padding-right: 40px;
+  }
+
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: fit-content;
+  }
+
+  .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+  
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .collapsible-content .content-inner {
+    background: lightblue;
+    border-bottom: 1px solid ;
+    list-style: none;
+    padding: 3rem ;
+  }
+
+.username {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.review_title {
+    font-size: 18pt;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 2em;
+}
+
+.review {
+    font-size: 16pt;
+    
+}
+
+
+.starRating {
+    font-size: large;
+    font-weight: bolder;
+    line-height: 5em;
+}
