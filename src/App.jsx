@@ -74,17 +74,31 @@ class App extends React.Component {
         <label htmlFor="collapsible" className="lbl-toggle">Reviews</label>
         <ul className='collapsible-content'>
           <div className='user_inputs'>
-          <input className='username_input' type='text' onChange={this.handleUsernameChange.bind(this)} placeholder='Username' />
-          <input className='review_title_input' type='text' onChange={this.handleTitleChange.bind(this)} placeholder='Review Title' />
-          <input className='review_input' type='text' onChange={this.handleReviewChange.bind(this)} placeholder='Write Your Review' />
+            <div>
+              <h4>Username</h4>
+          <input className='username_input' type='text' onChange={this.handleUsernameChange.bind(this)} />
+          </div>
+          <div>
+          <h4>Review Title</h4>
+            <input className='review_title_input' type='text' onChange={this.handleTitleChange.bind(this)}/>
+          </div>
+          <div>
+          <h4>Write Your Review</h4>
+          <input className='review_input' type='text' onChange={this.handleReviewChange.bind(this)}/>
+          </div>
+          <div>
+          <h4>Overall Rating</h4>
           <select className='rating_selection' onChange={this.selectRating.bind(this)}>
             {this.state.selection.map((el, index) => {
               return (
-                <option key={index} value={el}>{el}</option>
+                <option key={index} value={el}>{el} Stars</option>
               )
             })}
           </select>
-          <button value='submit' className='button' placeholder='submit' onClick={this.handleClick.bind(this)}>Submit</button>
+          </div>
+          <div>
+          <button value='submit' className='button' onClick={this.handleClick.bind(this)}>Submit Your Review</button>
+          </div>
           </div>
         {this.state.data.map((el, index) => {
           return (

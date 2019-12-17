@@ -1,15 +1,15 @@
 input[type='checkbox'] {
     display: none;
+    font-size: 18pt;
 }
 
 .button{
-  
-  
-  
   text-align: center;
   text-decoration: none;
-  
-  font-size: 16px;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding:10px
 }
 
 .button:hover{
@@ -18,27 +18,34 @@ background-color: lightgray;
 
 input{
   padding: 10px;
+  font-size: 12pt;
+  border: solid black 2px;
+}
+.review_input {
+  width:75%;
+  padding:40px;
+}
+
+.rating_selection {
+ padding: 5px;
+ font-size: 14pt;
 }
 
 .user_inputs{
-  padding: 5px;
+  font-size: 16pt;
 }
 
 .lbl-toggle {
-    display: block;
-    font-weight: bold;
+  display: block;
+  font-weight: bold;
   font-family: monospace;
   font-size: 1.2rem;
   text-transform: uppercase;
   text-align: center;
-
   padding: 1rem;
-
   color: gray;
   background: lightgrey;
-
   cursor: pointer;
-
   border-radius: 7px;
   transition: all 1s ease-out;
 }
