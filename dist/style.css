@@ -1,3 +1,7 @@
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
 input[type='checkbox'] {
     display: none;
     font-size: 18pt;
@@ -47,7 +51,7 @@ input{
   background: lightgrey;
   cursor: pointer;
   border-radius: 7px;
-  transition: all 1s ease-out;
+  transition: all .3s ease-out;
 }
 
 .lbl-toggle:hover {
@@ -57,23 +61,21 @@ input{
 .lbl-toggle::before {
     content: ' ';
     display: inline-block;
-  
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-left: 5px solid currentColor;
-  
     vertical-align: middle;
     margin-right: .7rem;
     transform: translateY(-2px);
-  
-    transition:ease-out;
+    transition: transform .2s ease-out;
   }
 
   .collapsible-content {
     max-height: 0px;
     overflow: hidden;
-    transition: ease-in-out;
-    padding-right: 40px;
+    margin-right: 40px;
+    transition: max-height 1s ease-in-out;
+    
   }
 
   .toggle:checked + .lbl-toggle + .collapsible-content {
@@ -94,6 +96,7 @@ input{
     border-bottom: 1px solid ;
     list-style: none;
     padding: 3rem ;
+    border:solid black 2px;
   }
 
 .username {
